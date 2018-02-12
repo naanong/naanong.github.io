@@ -1,0 +1,255 @@
+[
+    {"question" : "ตัวละครนี้อาศัยอยู่ที่ใด",
+      "images"  : "http://wp.production.patheos.com/blogs/eidos/files/2015/08/peterpan.jpg",
+      "answer" : "choice2",
+      "choice" : {
+                      "choice1" : "Wonderland" ,
+                      "choice2" : "Neverland" ,
+                      "choice3" : "Happyland" ,
+                      "choice4" : "Homeland"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้มีชื่อว่าอะไร",
+      "images" : "http://resize3-gulli.ladmedia.fr/r/611,599,center-middle,ffffff/img/var/jeunesse/storage/images/gulli/quoi-d-neuf/cine-dvd/snoopy-et-les-peanuts-le-film2/personnages/olaf/26792669-1-fre-FR/Olaf_original_backup.jpg",
+      "answer" : "choice1",
+      "choice" : {
+                      "choice1" : "Olaf" ,
+                      "choice2" : "Spike" ,
+                      "choice3" : "Belle" ,
+                      "choice4" : "Molly"
+                 }
+    },
+    {"question" : "ชื่อใดไม่ใช่สมาชิกในครอบครัว Darling",
+      "images" : "https://3.bp.blogspot.com/-jtaGBO1GwaE/UuerTdl4i4I/AAAAAAAAF7g/STYviwt_oUk/s1600/peter-pan-disneyscreencaps.com-1914+(640x480).jpg",
+      "answer" : "choice3",
+      "choice" : {
+                      "choice1" : "John" ,
+                      "choice2" : "Wendy" ,
+                      "choice3" : "Tommy" ,
+                      "choice4" : "Michael"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้มีชื่อว่าอะไร",
+      "images" : "http://images2.fanpop.com/images/photos/6500000/Bashful-snow-white-and-the-seven-dwarfs-6512638-300-240.jpg",
+      "answer" : "choice4",
+      "choice" : {
+                      "choice1" : "Sneezy" ,
+                      "choice2" : "Dopey" ,
+                      "choice3" : "Grumpy" ,
+                      "choice4" : "Bashful"
+                 }
+    },
+    {"question" : "ใครเป็นเจ้าของสุนัขตัวนี้",
+      "images" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgw5mbxEyDMPYah6FDw7PVFKAAy1AOzHEzV05hcXbGeknjPy7t",
+      "answer" : "choice4",
+      "choice" : {
+                      "choice1" : "Schroeder" ,
+                      "choice2" : "Lucy" ,
+                      "choice3" : "Linus" ,
+                      "choice4" : "Charlie Brown"
+                 }
+    },
+    {"question" : "การ์ตูนเรื่องนี้มีชื่อว่าอะไร",
+      "images" : "https://sourceable.net/wp-content/uploads/2016/02/lies.jpg",
+      "answer" : "choice1",
+      "choice" : {
+                      "choice1" : "Pinocchio" ,
+                      "choice2" : "Peterpan" ,
+                      "choice3" : "Lilo&Stitch" ,
+                      "choice4" : "Wreck-It Ralph"
+                 }
+    },
+    {"question" : "ตัวละครนี้้อยู่ในการ์ตูนเรื่องใด",
+      "images" : "https://vignette.wikia.nocookie.net/little-mermaid/images/2/2c/Flounder.jpg/revision/latest?cb=20151212021541",
+      "answer" : "choice2",
+      "choice" : {
+                      "choice1" : "Ariel" ,
+                      "choice2" : "The little mermaid" ,
+                      "choice3" : "Nemo" ,
+                      "choice4" : "Sea land"
+                 }
+    },
+    {"question" : "กลุ่มเด็กๆที่ไม่ยอมโตมีชื่อว่า",
+      "images" : "https://onceuponarealityproductions.files.wordpress.com/2011/10/tumblr_lot90g7bfc1qfd46o.jpg",
+      "answer" : "choice3",
+      "choice" : {
+                      "choice1" : "The kid boys" ,
+                      "choice2" : "The sad boys" ,
+                      "choice3" : "The lost boys" ,
+                      "choice4" : "The play boys"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้มีชื่อว่าอะไร",
+      "images" : "https://vignette.wikia.nocookie.net/cartoonhalloffame/images/8/81/14684-.png/revision/latest?cb=20130629041320",
+      "answer" : "choice2",
+      "choice" : {
+                      "choice1" : "Donald duck" ,
+                      "choice2" : "Daffy duck" ,
+                      "choice3" : "Daniel duck" ,
+                      "choice4" : "Duckzy"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้มีชื่อว่าอะไร",
+      "images" : "https://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg_1,q_auto/porkypig_e5abrc.jpg",
+      "answer" : "choice4",
+      "choice" : {
+                      "choice1" : "Poko Pig" ,
+                      "choice2" : "Pinky pig" ,
+                      "choice3" : "Piggy pig" ,
+                      "choice4" : "Porky pig"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้มีชื่อว่าอะไร",
+      "images" : "https://vignette.wikia.nocookie.net/jamescameronsavatar/images/e/ee/Marvin_the_Martian.jpg/revision/latest?cb=20100224202718",
+      "answer" : "choice1",
+      "choice" : {
+                      "choice1" : "Marvin the Martian" ,
+                      "choice2" : "Tasmanian Devil" ,
+                      "choice3" : "Pepé Le Pew" ,
+                      "choice4" : "Felix the Cat"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้มีชื่อว่าอะไร",
+      "images" : "https://nerdist.com/wp-content/uploads/2015/12/Speedy-Gonzales.jpg",
+      "answer" : "choice4",
+      "choice" : {
+                      "choice1" : "Patrick Star" ,
+                      "choice2" : "Droopy" ,
+                      "choice3" : "Boo‐Boo" ,
+                      "choice4" : "Speedy Gonzales"
+                 }
+    },
+    {"question" : "ตัวละครไม่ได้อยู่ในการ์ตูนเรื่องนี้",
+      "images" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTvYNYxvCPBZSvw_-tHZfFedW_1VvnoMc66dCsZ9OUWW4BUx9",
+      "answer" : "choice3",
+      "choice" : {
+                      "choice1" : "Tasmanian Devil" ,
+                      "choice2" : "Granny" ,
+                      "choice3" : "Oswald" ,
+                      "choice4" : "Bugs Bunny"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้มีชื่อว่าอะไร",
+      "images" : "https://lumiere-a.akamaihd.net/v1/images/character_princess_tiana_ed266702.jpeg?region=0,0,450,450",
+      "answer" : "choice1",
+      "choice" : {
+                      "choice1" : "Tiana" ,
+                      "choice2" : "๋Jasmine" ,
+                      "choice3" : "Merida" ,
+                      "choice4" : "Pocahontas"
+                 }
+    },
+    {"question" : "ตัวละครใดไม่ได้ปรากฏอยู่ในการ์ตูนเรื่องนี้",
+      "images" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDsXNkOGqytlbIwplpR8nP-iHvAwswMHyI3Uz7QMrlv4nx9Ux",
+      "answer" : "choice3",
+      "choice" : {
+                      "choice1" : "Fuzzy Lumpkins" ,
+                      "choice2" : "Miss Keane" ,
+                      "choice3" : "Stewie Griffin" ,
+                      "choice4" : "Mojo Jojo"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้อยู่ในการ์ตูนเรื่องใด",
+      "images" : "https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/27545348_184082969016989_7155915205931063053_n.jpg?oh=1e318ca161e5d789ff929a11580ff23a&oe=5B1DF04A",
+      "answer" : "choice2",
+      "choice" : {
+                      "choice1" : "Peterpan" ,
+                      "choice2" : "Pinocchio" ,
+                      "choice3" : "Tom&Jerry" ,
+                      "choice4" : "Looney Tunes"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้คู่กับนางเอกที่ชื่อว่าอะไร",
+      "images" : "https://vignette.wikia.nocookie.net/disneyprincess/images/c/ce/1000px-Normal_beautyandthebeast_3998.jpg/revision/latest?cb=20120902235132",
+      "answer" : "choice3",
+      "choice" : {
+                      "choice1" : "Merida" ,
+                      "choice2" : "Aurora" ,
+                      "choice3" : "Belle" ,
+                      "choice4" : "Tiana"
+                 }
+    },
+    {"question" : "Andy ใน Toy story 3 มีอายุเท่าไร",
+      "images" : "https://vignette.wikia.nocookie.net/disney/images/7/7a/Look_at_toys.jpg/revision/latest?cb=20140415171920",
+      "answer" : "choice3",
+      "choice" : {
+                      "choice1" : "15" ,
+                      "choice2" : "16" ,
+                      "choice3" : "17" ,
+                      "choice4" : "18"
+                 }
+    },
+    {"question" : "ตัวละครใดมาปรากฎตัวใน Toy story 3 เป็นครั้งแรก",
+      "images" : "http://www.worldofinternet.loxblog.com/upload/w/worldofinternet/image/toy-story-all-character.jpg",
+      "answer" : "choice1",
+      "choice" : {
+                      "choice1" : "Mr.Pricklepants" ,
+                      "choice2" : "Hamm" ,
+                      "choice3" : "Slinky Dog" ,
+                      "choice4" : "Jessie"
+                 }
+    },
+    {"question" : "การ์ตูนเรื่องนี้มีชื่อว่าอะไร",
+      "images" : "https://www.bedtimeshortstories.com/wp-content/uploads/2017/04/lady-and-the-tramp-003__1492759785_112.196.175.38.jpg",
+      "answer" : "choice2",
+      "choice" : {
+                      "choice1" : "One Hundred and One Dalmatians" ,
+                      "choice2" : "Lady and the Tramp" ,
+                      "choice3" : "The Aristocats" ,
+                      "choice4" : "Oliver and Company"
+                 }
+    },
+    {"question" : "ในภาพยนต์เรื่อง Inside out ไม่มีตัวละครที่เป็นอารมณ์ใด",
+      "images" : "https://vignette.wikia.nocookie.net/thefutureofeuropes/images/4/4f/Inside_out_logo_by_jubaaj-d81m2nv.png/revision/latest?cb=20151108101502",
+      "answer" : "choice3",
+      "choice" : {
+                      "choice1" : "Fear" ,
+                      "choice2" : "Disgust" ,
+                      "choice3" : "Love" ,
+                      "choice4" : "Joy"
+                 }
+    },
+    {"question" : "ตัวละครใดไม่ได้ปรากฏตัวในการ์ตูนเรื่อง Winnie the Pooh",
+      "images" : "http://cdn.playbuzz.com/cdn/f2509c9d-5fbb-4ab7-a133-13721eddbf4c/a8028ebd-2e4d-4ca4-8928-f79ed62dadb2_560_420.jpg",
+      "answer" : "choice4",
+      "choice" : {
+                      "choice1" : "Kanga Roo:" ,
+                      "choice2" : "Owl" ,
+                      "choice3" : "Christopher Robin" ,
+                      "choice4" : "Porcupine"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้มีชื่อว่าอะไร",
+      "images" : "https://www.wikihow.com/images/4/4a/Draw-Stewie-from-Family-Guy-Step-17.jpg",
+      "answer" : "choice2",
+      "choice" : {
+                      "choice1" : "Dr. Doofenshmirtz " ,
+                      "choice2" : "Stewie Griffin" ,
+                      "choice3" : "Phineas Flynn" ,
+                      "choice4" : "Eric Cartman"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้มีชื่อว่าอะไร",
+      "images" : "https://cdn.costumewall.com/wp-content/uploads/2017/01/phineas-flynn.jpg",
+      "answer" : "choice1",
+      "choice" : {
+                      "choice1" : "Phineas Flynn" ,
+                      "choice2" : "Dr. Doofenshmirtz " ,
+                      "choice3" : "Eric Cartman" ,
+                      "choice4" : "Stewie Griffin"
+                 }
+    },
+    {"question" : "ตัวละครตัวนี้ปรากฎอยู่ในการ์ตูนเรื่องใด",
+      "images" : "http://cartoondistrict.com/wp-content/uploads/2015/01/List-of-popular-dog-cartoon-characters2-002.jpg",
+      "answer" : "choice1",
+      "choice" : {
+                      "choice1" : "Family Guy" ,
+                      "choice2" : "Phineas and Ferb" ,
+                      "choice3" : "The Animaniacs" ,
+                      "choice4" : "Rocky and His Friends"
+                 }
+    }
+
+
+
+  ]
