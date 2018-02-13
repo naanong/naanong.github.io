@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>QuizKid</title>
+  <style>
+    body {
+      background: url('bg-home.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: 85% 100%, auto;
+      margin: 0% auto;
+    }
+    #name {
+      width: 80%;
+      height: 300px;
+      animation: name-animation 1.5s ease-in-out infinite;
+    }
+    #logo {
+      width: 40%;
+      padding-left: 40%;
+    }
+    @keyframes name-animation {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(5%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    #btn-play {
+      background: url("button-play.png");
+      width: 310px;
+      height: 105px;
+      position: fixed;
+      top: 82%;
+      right: 40%;
+    }
+    #btn-play:hover {
+      background: url("button-play-hover.png");
+    }
+    .bg-question-type {
+      background: url('bg-question-type.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: 85% 100%, auto;
+    }
+    #btn-10q {
+      background: url("button-10q.png");
+      width: 500px;
+      height: 170px;
+      position: fixed;
+      top: 6%;
+      right: 57%;
+    }
+    #btn-10q:hover {
+      background: url("button-10q-hover.png");
+    }
+    #btn-20q {
+      background: url("button-20q.png");
+      width: 500px;
+      height: 170px;
+      position: fixed;
+      top: 35%;
+      right: 57%;
+    }
+    #btn-20q:hover {
+      background: url("button-20q-hover.png");
+    }
+    .bg-question {
+      background: url('bg-question.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: 85% 100%, auto;
+    }
+    #btn-start {
+      background: url('button-start.png');
+      width: 216px;
+      height: 218px;
+      position: fixed;
+      top: 12%;
+      right: 43.5%;
+    }
+    #btn-start:hover {
+      background: url("button-start-hover.png");
+    }
+    .btn-choice1 {
+      background: url("button-choice.png");
+      width: 300px;
+      height: 120px;
+      position: fixed;
+      top: 64%;
+      right: 51.5%;
+    }
+    .btn-choice2 {
+      background: url("button-choice.png");
+      width: 300px;
+      height: 120px;
+      position: fixed;
+      top: 64%;
+      right: 30%;
+    }
+    .btn-choice3 {
+      background: url("button-choice.png");
+      width: 300px;
+      height: 120px;
+      position: fixed;
+      top: 82%;
+      right: 51.5%;
+    }
+    .btn-choice4 {
+      background: url("button-choice.png");
+      width: 300px;
+      height: 120px;
+      position: fixed;
+      top: 82%;
+      right: 30%;
+    }
+    .btn-choice1:hover,
+    .btn-choice2:hover,
+    .btn-choice3:hover,
+    .btn-choice4:hover {
+      background: url("button-choice-hover.png");
+    }
+    .question {
+      font-size: 25px;
+      font-weight: bold;
+      position: fixed;
+      top: 53%;
+      right: 38%;
+    }
+    .choice1 {
+      font-size: 25px;
+      font-weight: bold;
+      position: fixed;
+      top: 70%;
+      right: 58%;
+    }
+    .choice2 {
+      font-size: 25px;
+      font-weight: bold;
+      position: fixed;
+      top: 70%;
+      right: 36%;
+    }
+    .choice3 {
+      font-size: 25px;
+      font-weight: bold;
+      position: fixed;
+      top: 88%;
+      right: 58%;
+    }
+    .choice4 {
+      font-size: 25px;
+      font-weight: bold;
+      position: fixed;
+      top: 88%;
+      right: 36%;
+    }
+    .images{
+      width: 32%;
+      height: 35%;
+      position: fixed;
+      top: 10%;
+      right: 34.5%;
+    }
+    #progressBar{
+      position: fixed;
+      top: 3%;
+      right: 45%;
+    }
+    #yourPoint{
+      font-size: 50px;
+      font-weight: bold;
+      position: fixed;
+      top: 15%;
+      right: 41%;
+    }
+    #quizNumber{
+      font-size: 50px;
+      font-weight: bold;
+      position: fixed;
+      top: 10%;
+      right: 70%;
+    }
+    </style>
+</head>
+
+
+<body>
+  <div id="name"><img id="logo" src="QuizKid.png" /></div>
+  <input type="image" id="btn-play" value="">
+  <input hidden type="image" id="btn-10q" value="">
+  <input hidden type="image" id="btn-20q" value="">
+  <input hidden type="" id="btn-start" value="">
+  <input hidden type="image" class="btn-choice1" value="">
+  <input hidden type="image" class="btn-choice2" value="">
+  <input hidden type="image" class="btn-choice3" value="">
+  <input hidden type="image" class="btn-choice4" value="">
+  <progress hidden value="0" max="10" id="progressBar"></progress>
+  <div class="question"></div>
+  <img hidden class="images"></img>
+  <div class="choice1"></div>
+  <div class="choice2"></div>
+  <div class="choice3"></div>
+  <div class="choice4"></div>
+  <p hidden id="yourPoint"></p>
+  <p hidden id="quizNumber"></p>
+
+
+  <script src="jquery-3.3.1.min.js">
+    charset = "utf-8"
+  </script>
+
+  <script>
+    var point = 0;
+    var quiz;
+    var quizNumber = 1;
+    var select;
+    $(document).ready(function() {
+      function play(response) {
+        $("#name").hide();
+        $("#btn-play").hide();
+        $("body").toggleClass("bg-question-type");
+        $("#btn-10q").show();
+        $("#btn-20q").show();
+      }
+      function question10(response) {
+        $("#btn-10q").hide();
+        $("#btn-20q").hide();
+        $(".bg-question-type").toggleClass("bg-question");
+        $("#btn-start").show();
+        quiz = 10;
+      }
+      function question20(response) {
+        $("#btn-10q").hide();
+        $("#btn-20q").hide();
+        $(".bg-question-type").toggleClass("bg-question");
+        $("#btn-start").show();
+        quiz = 20;
+      }
+      function start(response) {
+        $("#btn-start").hide();
+        $(".images").show();
+        $(".btn-choice1").fadeIn();
+        $(".btn-choice2").fadeIn();
+        $(".btn-choice3").fadeIn();
+        $(".btn-choice4").fadeIn();
+      }
+      function showQuestion(response, number) {
+        if (number != 0){
+          $('.question').html(response[number-1].question);
+        }
+      }
+      function showImage(response, number) {
+        if (number != 0){
+          $('.images').attr('src',response[number-1].images);
+        }
+      }
+      function showChoice(response, number) {
+        if (number != 0){
+          $('.choice1').html(response[number - 1].choice.choice1);
+          $('.choice2').html(response[number - 1].choice.choice2);
+          $('.choice3').html(response[number - 1].choice.choice3);
+          $('.choice4').html(response[number - 1].choice.choice4);
+        }
+      }
+      function checkAnswer(response, select, number) {
+        count += 1;
+        quizNumber += 1;
+        $("#quizNumber").html("ข้อ " + quizNumber);
+        if (response[number - 1].answer === select) {
+          point += 1;
+        }
+      }
+      function deleteAll(response) {
+        $(".btn-choice1").hide();
+        $(".btn-choice2").hide();
+        $(".btn-choice3").hide();
+        $(".btn-choice4").hide();
+      }
+      var number = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+      var randomNumber = 0;
+      var unUsedNumber
+      var remove;
+      var count = 0;
+      function selectRandomNumber(no) {
+        if (count === quiz){
+          $(".btn-choice1").hide();
+          $(".btn-choice2").hide();
+          $(".btn-choice3").hide();
+          $(".btn-choice4").hide();
+          $(".question").hide();
+          $(".choice1").hide();
+          $(".choice2").hide();
+          $(".choice3").hide();
+          $(".choice4").hide();
+          $(".images").hide();
+          $("#progressBar").hide();
+          $('#quizNumber').hide();
+          $('#yourPoint').show();
+          $('#yourPoint').html("Your point = " + point);
+          return 0;
+        }
+        return no[Math.floor(Math.random()*no.length)];
+      }
+      function randomNumberGeneration(randomNumber) {
+        if (randomNumber === 0){
+          return number;
+        }
+        else {
+          remove = number.splice(number.indexOf(randomNumber), 1 );
+          return number;
+        }
+      }
+      var yourTime;
+      var downloadTimer;
+      var timeleft ;
+      $.ajax({
+        url: 'data.json',
+        method: 'GET',
+        dataType: 'json',
+        success: function(response) {
+          $("#btn-play").click(function() {
+            play(response);
+          });
+          $("#btn-10q").click(function() {
+            question10(response);
+          });
+          $("#btn-20q").click(function() {
+            question20(response);
+          });
+          $("#btn-start").click(function() {
+            start(response);
+            randomNumber = selectRandomNumber(randomNumberGeneration(randomNumber));
+            showQuestion(response, randomNumber);
+            showImage(response, randomNumber);
+            showChoice(response, randomNumber);
+            Timing ();
+            function Timing () {
+              $("#progressBar").show();
+              $('#quizNumber').show();
+              $("#quizNumber").html("ข้อ " + quizNumber);
+              timeleft = 10;
+              downloadTimer = setInterval(function() {
+              document.getElementById("progressBar").value = 10 - --timeleft;
+              if (timeleft <= 0)
+                clearInterval(downloadTimer);
+              }, 1000);
+              yourTime = setTimeout(function() {
+              select = "noSelect";
+              checkAnswer(response, select, randomNumber);
+              deleteAll(response);
+              start(response);
+              randomNumber = selectRandomNumber(randomNumberGeneration(randomNumber));
+              showQuestion(response, randomNumber);
+              showImage(response, randomNumber);
+              showChoice(response, randomNumber);
+              clearTimeout(yourTime);
+              clearInterval(downloadTimer);
+              $("#quizNumber").html("ข้อ " + quizNumber);
+              Timing ();
+            }, 10000);
+            }
+            function stopTimeout() {
+              clearTimeout(yourTime);
+            }
+            $(".btn-choice1").click(function() {
+              select = "choice1";
+              stopTimeout();
+              clearInterval(downloadTimer);
+              Timing ();
+              checkAnswer(response, select, randomNumber);
+              deleteAll(response);
+              start(response);
+              randomNumber = selectRandomNumber(randomNumberGeneration(randomNumber));
+              showQuestion(response, randomNumber);
+              showImage(response, randomNumber);
+              showChoice(response, randomNumber);
+            });
+            $(".btn-choice2").click(function() {
+              select = "choice2";
+              stopTimeout();
+              clearInterval(downloadTimer);
+              Timing ();
+              checkAnswer(response, select, randomNumber);
+              deleteAll(response);
+              start(response);
+              randomNumber = selectRandomNumber(randomNumberGeneration(randomNumber));
+              showQuestion(response, randomNumber);
+              showImage(response, randomNumber);
+              showChoice(response, randomNumber);
+            });
+            $(".btn-choice3").click(function() {
+              select = "choice3";
+              stopTimeout();
+              clearInterval(downloadTimer);
+              Timing ();
+              checkAnswer(response, select, randomNumber);
+              deleteAll(response);
+              start(response);
+              randomNumber = selectRandomNumber(randomNumberGeneration(randomNumber));
+              showQuestion(response, randomNumber);
+              showImage(response, randomNumber);
+              showChoice(response, randomNumber);
+            });
+            $(".btn-choice4").click(function() {
+              select = "choice4";
+              stopTimeout();
+              clearInterval(downloadTimer);
+              Timing ();
+              checkAnswer(response, select, randomNumber);
+              deleteAll(response);
+              start(response);
+              randomNumber = selectRandomNumber(randomNumberGeneration(randomNumber));
+              showQuestion(response, randomNumber);
+              showImage(response, randomNumber);
+              showChoice(response, randomNumber);
+            });
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
